@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>GameX</title>
+    <style>
+        body {
+            background-color: #1F2937;
+            color: #FFFFFF;
+            font-family: Arial, sans-serif;
+            margin: 0;
+        }
+
+        header {
+            background-color: #111827;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        nav {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 16px 24px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav a {
+            background-color: #3B82F6;
+            color: white;
+            padding: 8px 16px;
+            border-radius: 4px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+
+        nav a:hover {
+            background-color: #2563EB;
+        }
+
+        h1 {
+            font-size: 24px;
+            font-weight: bold;
+            margin: 0;
+        }
+
+        section {
+            padding: 80px 0;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        h3 {
+            font-size: 30px;
+            font-weight: bold;
+            margin-bottom: 32px;
+            text-align: center;
+        }
+
+        .game-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 32px;
+        }
+
+        .game-card {
+            border-radius: 8px;
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .game-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .game-card a {
+            display: block;
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .game-card img {
+            width: 100%;
+            height: 256px;
+            object-fit: cover;
+        }
+
+        .game-card div {
+            background-color: #111827;
+            padding: 16px;
+            text-align: center;
+        }
+
+        .game-card h4 {
+            font-size: 20px;
+            font-weight: 600;
+            margin: 0;
+        }
+
+        footer {
+            background-color: #1F2937;
+            padding: 24px 0;
+            text-align: center;
+        }
+
+        footer div {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        footer p {
+            margin: 0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <h1>GameX</h1>
+            <a href="login.html">Login</a>
+        </nav>
+    </header>
+
+    <!-- Games Section -->
+    <section>
+        <div class="container">
+            <h3>Our Games</h3>
+            <div class="game-grid">
+                <!-- Game 1: Snake -->
+                <div class="game-card">
+                    <a href="https://nakulrathor1.github.io/Snake/">
+                        <img src="https://i.pinimg.com/474x/77/fe/42/77fe42dd1b7e9ca3d673137305dd0e88.jpg" alt="Snake">
+                        <div><h4>Snake Game</h4></div>
+                    </a>
+                </div>
+                <!-- Game 2: Minesweeper -->
+                <div class="game-card">
+                    <a href="https://nakulrathor1.github.io/MineSweeper/">
+                        <img src="https://play-lh.googleusercontent.com/0al7y-A8k7uUqo0ANmKG9tFiFut55LzriRLE977hDaOFuPKFjAwBRhl2rTYdKwFEMyY=w240-h480-rw" alt="Minesweeper">
+                        <div><h4>Minesweeper</h4></div>
+                    </a>
+                </div>
+                <!-- Game 3: Tetris -->
+                <div class="game-card">
+                    <a href="https://larprad.github.io/tetris/">
+                        <img src="https://assets.apk.live/com.n3twork.tetris--191-icon.png" alt="Tetris">
+                        <div><h4>Tetris</h4></div>
+                    </a>
+                </div>
+                <!-- Game 4: Sudoku -->
+                <div class="game-card">
+                    <a href="https://nakulrathor1.github.io/Sudoku/">
+                        <img src="https://cdn-bgp.bluestacks.com/BGP/us/gametiles_com.icenta.sudoku.ui.jpg" alt="Sudoku">
+                        <div><h4>Sudoku</h4></div>
+                    </a>
+                </div>
+                <!-- Game 5: Tic Tac Toe -->
+                <div class="game-card">
+                    <a href="https://nakulrathor1.github.io/Tic-Tac-Toe-Game-/">
+                        <img src="https://www.shutterstock.com/shutterstock/videos/1104713975/thumb/10.jpg?ip=x480" alt="Tic Tac Toe">
+                        <div><h4>Tic Tac Toe</h4></div>
+                    </a>
+                </div>
+                <!-- Game 6: Chess -->
+                <div class="game-card">
+                    <a href="https://ahmadalkholy.github.io/Javascript-Chess-Game/chess.html">
+                        <img src="https://us.123rf.com/450wm/vectoroksana/vectoroksana1909/vectoroksana190913859/130257991-gold-business-strategy-icon-isolated-on-dark-blue-background-chess-symbol-game-management.jpg?ver=6" alt="Chess">
+                        <div><h4>Chess</h4></div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div>
+            <p>More games on the way stay tuned</p>
+        </div>
+    </footer>
+
+</body>
+</html>
